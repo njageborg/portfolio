@@ -5,6 +5,12 @@
 @import 'code';
 @import 'mobile-menu';
 
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
 body {
     background-color: $background-color;
 }
