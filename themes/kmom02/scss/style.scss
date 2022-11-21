@@ -14,7 +14,11 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab:wght@500&display=swap');
 
 body {
-    background-color: $background-color;
+    background-image: $background-image;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
 }
 
 * {
@@ -25,4 +29,62 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 
+}
+
+// Logo and image
+.logo img {
+    width: 10%;
+    min-width: 90px;
+    max-width: 100%;
+    float: right;
+    border-radius: 50%;
+
+}
+
+.imgme {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  min-width: 100px;
+  max-width: 100%;
+  border: 3px solid;
+}
+
+.social {
+    float: right;
+}
+
+// Typograpy
+html {
+    font-size: 100%;
+}
+
+p {
+    font-size: 1em;
+}
+
+@media (min-width: 64em) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+// Vertical rythm
+body {
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1.25em;
+    margin-bottom: 1.75rem; /* 1.4 * 1.25em vår baseline */
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 3.5rem; /* baseline * 2, för att skapa mer utrymme */
+}
+#nav {
+    font-size: 2vw;
+    
 }

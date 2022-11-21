@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -6510,7 +6511,11 @@ readers do not read off random characters that represent icons */
 }
 
 body {
-  background-color: #3d5a80;
+  background-image: linear-gradient(rgb(197, 137, 224), rgb(197, 197, 117));
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  margin-right: 4vw;
+  margin-left: 4vw;
 }
 
 * {
@@ -6520,4 +6525,57 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
+}
+
+.logo img {
+  width: 10%;
+  min-width: 90px;
+  max-width: 100%;
+  float: right;
+  border-radius: 50%;
+}
+
+.imgme {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  min-width: 100px;
+  max-width: 100%;
+  border: 3px solid;
+}
+
+.social {
+  float: right;
+}
+
+html {
+  font-size: 100%;
+}
+
+p {
+  font-size: 1em;
+}
+
+@media (min-width: 64em) {
+  html {
+    font-size: 112.5%;
+  }
+}
+body {
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1.25em;
+  margin-bottom: 1.75rem; /* 1.4 * 1.25em vår baseline */
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 3.5rem; /* baseline * 2, för att skapa mer utrymme */
+}
+
+#nav {
+  font-size: 2vw;
 }
