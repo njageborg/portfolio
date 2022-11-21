@@ -26,7 +26,12 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Roboto Slab', serif;
 
 }
@@ -43,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .imgme {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  min-width: 100px;
-  max-width: 100%;
-  border: 3px solid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    min-width: 100px;
+    max-width: 100%;
+    border: 3px solid;
 }
 
 .social {
@@ -65,9 +70,9 @@ p {
 }
 
 @media (min-width: 64em) {
-  html {
-    font-size: 112.5%;
-  }
+    html {
+        font-size: 112.5%;
+    }
 }
 
 // Vertical rythm
@@ -77,14 +82,17 @@ body {
 
 p {
     font-size: 1.25em;
-    margin-bottom: 1.75rem; /* 1.4 * 1.25em vår baseline */
+    margin-bottom: 1.75rem;
+    /* 1.4 * 1.25em vår baseline */
 }
 
 h1 {
     font-size: 2.8em;
-    margin-bottom: 3.5rem; /* baseline * 2, för att skapa mer utrymme */
+    margin-bottom: 3.5rem;
+    /* baseline * 2, för att skapa mer utrymme */
 }
-#nav {
+
+.nav {
     font-size: 2vw;
-    
+
 }
