@@ -1,3 +1,19 @@
-.landingpage {
-    background-color: yellowgreen;
+.rapport {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.rapport-sidebar {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .rapport-sidebar {
+        display: block;
+    }
+
+    .rapport {
+        grid-template-columns: 1fr auto;
+        gap: 3em;
+    }
 }

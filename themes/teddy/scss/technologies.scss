@@ -1,0 +1,139 @@
+.landingpage {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    gap: 1em 1em;
+}
+
+.landingpage h1 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.text-border {
+    text-decoration: underline;
+    text-decoration-thickness: auto;
+    font-weight: bold;
+
+}
+
+.tech-box1 {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.tech-box2 {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.tech-box3 {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 4;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.tech-box4 {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 5;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.tech-box5 {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 6;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.tech-box6 {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 7;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.tech-box7 {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1;
+    grid-row: 8;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 767px) {
+    .landingpage {
+        grid-auto-columns: minmax(200px, auto);
+    }
+
+    .landingpage h1 {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        font-size: 4em;
+    }
+
+    .tech-box1 {
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+
+    .tech-box2 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .tech-box3 {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .box3 {
+        padding-top: 14px;
+    }
+
+    .tech-box4 {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .box4 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .tech-box5 {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    }
+
+    .tech-box6 {
+        grid-column: 1;
+        grid-row: 5 / 6;
+    }
+
+    .tech-box7 {
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+    }
+}
