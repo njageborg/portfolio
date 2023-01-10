@@ -9,10 +9,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass teddy/scss/style.scss teddy/css/style.css --no-source-map",
-    "style-min": "sass teddy/scss/style.scss teddy/css/style.min.css --no-source-map --style compressed",
-    "watch": "sass teddy/scss/style.scss teddy/css/style.css --no-source-map --watch",
-    "watch-min": "sass teddy/scss/style.scss teddy/css/style.min.css --no-source-map --style compressed --watch"
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass teddy/scss/style-dark.scss teddy/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass teddy/scss/style-dark.scss teddy/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass teddy/scss/style.scss teddy/css/style.css --no-source-map",
+    "style-light-min": "sass teddy/scss/style.scss teddy/css/style.min.css --no-source-map --style compressed",
+    "watch": "sass teddy/scss/style.scss:teddy/css/style.css teddy/scss/style-dark.scss:teddy/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass teddy/scss/style.scss:teddy/css/style.min.css teddy/scss/style-dark.scss:teddy/css/style-dark.min.css --no-source-map --style compressed --watch"
   },
   "keywords": [],
   "author": "",

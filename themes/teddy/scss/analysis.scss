@@ -1,0 +1,61 @@
+.rapport {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.rapport-sidebar {
+    display: none;
+}
+
+.rapport-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+
+.rapport1 {
+    font-size: larger;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    padding: 2vh;
+    text-align: center;
+}
+
+.rapport2 {
+    font-size: larger;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    padding: 2vh;
+    text-align: center;
+}
+
+.rapport3 {
+    font-size: larger;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    padding: 2vh;
+    text-align: center;
+}
+
+@media (min-width: 767px) {
+    .rapport-sidebar {
+        display: block;
+        gap: 2em;
+    }
+
+    .rapport {
+        grid-template-columns: 1fr auto;
+        gap: 3em;
+    }
+
+    .rapport-box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
